@@ -10,23 +10,31 @@
 <body>
 <header class="site-header">
   <nav class="nav">
-    <a class="brand" href="index.html"><span class="logo">O</span><span>OziRP</span></a>
+    <a class="brand" href="index.html"><img class="brand-logo" src="assets/ozirp-logo-icon.png" alt="Logo OziRP"><span>OziRP</span></a>
     <div class="navlinks"><a href="index.html">Accueil</a><a href="commandes.html">Commandes</a><a href="politique-confidentialite.html">Confidentialité</a><a href="cgu.html">CGU</a></div>
   </nav>
 </header>
 
 <main class="commands-wrap">
-  <section class="commands-hero">
-    <span class="badge">Catalogue OziRP</span>
-    <h1>Commandes disponibles</h1>
-    <p class="lead">Retrouvez les <strong>43 commandes</strong> actuellement présentes sur OziRP. Certaines commandes nécessitent un rôle ou une permission spécifique sur Discord.</p>
+  <section class="commands-hero commands-banner">
+    <div class="commands-hero-grid">
+      <div>
+        <span class="badge hero-badge">Catalogue OziRP</span>
+        <h1>Commandes disponibles</h1>
+        <p class="lead">Retrouvez les <strong>43 commandes</strong> actuellement présentes sur OziRP. Certaines commandes nécessitent un rôle ou une permission spécifique sur Discord.</p>
 
-    <div class="command-search">
-      <span aria-hidden="true">🔎</span>
-      <input id="commandSearch" type="search" placeholder="Rechercher une commande ou une fonction…" autocomplete="off" aria-label="Rechercher une commande">
-      <button id="clearSearch" type="button" class="clear-search" aria-label="Effacer la recherche">Effacer</button>
+        <div class="command-search">
+          <span aria-hidden="true">🔎</span>
+          <input id="commandSearch" type="search" placeholder="Rechercher une commande ou une fonction…" autocomplete="off" aria-label="Rechercher une commande">
+          <button id="clearSearch" type="button" class="clear-search" aria-label="Effacer la recherche">Effacer</button>
+        </div>
+        <p id="searchResult" class="search-result" aria-live="polite">43 commandes affichées</p>
+      </div>
+      <aside class="commands-logo-card">
+        <img class="commands-logo" src="assets/ozirp-logo-full.png" alt="Logo OziRP">
+        <p>Un aperçu clair des fonctionnalités du bot, organisé par catégorie.</p>
+      </aside>
     </div>
-    <p id="searchResult" class="search-result" aria-live="polite">43 commandes affichées</p>
   </section>
 
   <div class="commands-list">
