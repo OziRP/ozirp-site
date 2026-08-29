@@ -134,3 +134,30 @@ h1{font-size:clamp(2.2rem,6vw,4.6rem);line-height:1.02;margin:18px 0 16px;letter
 }
 
 .hero-logo-panel::after{content:"Logo officiel OziRP";display:block;position:absolute;opacity:0;pointer-events:none}
+
+
+/* --- Page Lunel RP --- */
+.lunel-wrap{max-width:1120px;margin:0 auto;padding:70px 22px 80px}
+.lunel-hero{position:relative;overflow:hidden;display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;padding:34px;border-radius:30px;background:linear-gradient(135deg,rgba(16,28,51,.96),rgba(10,20,38,.97));border:1px solid rgba(255,255,255,.08);box-shadow:0 28px 60px rgba(0,0,0,.22)}
+.lunel-hero::before{content:"";position:absolute;left:-90px;top:-100px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(28,184,255,.23),transparent 68%)}
+.lunel-hero::after{content:"";position:absolute;right:-70px;bottom:-110px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(255,76,85,.19),transparent 70%)}
+.lunel-hero-content,.lunel-code-card{position:relative;z-index:1}
+.lunel-hero h1{margin-top:18px}
+.lunel-code-card{padding:30px;border-radius:24px;text-align:center;background:linear-gradient(180deg,rgba(15,31,58,.96),rgba(11,24,44,.98));border:1px solid rgba(28,184,255,.25);box-shadow:0 18px 38px rgba(0,0,0,.22)}
+.server-label{display:block;color:var(--muted);font-size:.82rem;font-weight:800;letter-spacing:.11em}
+.server-code{display:block;margin:12px 0 8px;font-size:clamp(3.2rem,9vw,6.2rem);line-height:1;letter-spacing:.08em;color:#fff;text-shadow:0 0 26px rgba(28,184,255,.38)}
+.lunel-code-card p{color:var(--muted)}
+.copy-code{cursor:pointer;font:inherit}
+.copy-feedback{display:block;min-height:1.5em;margin-top:10px;color:var(--ok);font-weight:700}
+.lunel-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:24px}
+.join-panel{margin-top:24px;display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:center;padding:30px;border-radius:26px;background:linear-gradient(135deg,rgba(18,42,78,.88),rgba(12,24,46,.96));border:1px solid rgba(28,184,255,.20);box-shadow:var(--shadow)}
+.join-panel h2{font-size:clamp(1.7rem,4vw,2.5rem);margin:14px 0 10px}
+.join-panel ol{margin:0;padding-left:1.25rem;color:#d8def2}
+.join-panel li{margin:.55rem 0}
+.join-cta{display:flex;flex-direction:column;gap:14px}
+.mini-code{padding:20px;border-radius:18px;text-align:center;background:rgba(6,16,31,.55);border:1px solid var(--line)}
+.mini-code span{display:block;color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.08em}
+.mini-code strong{display:block;margin-top:4px;font-size:2.3rem;letter-spacing:.08em}
+.lunel-card{border-color:rgba(255,76,85,.25)}
+@media(max-width:900px){.lunel-hero,.join-panel{grid-template-columns:1fr}.lunel-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.lunel-wrap{padding-top:44px}.lunel-hero{padding:20px}.lunel-grid{grid-template-columns:1fr}.server-code{font-size:3.5rem}}
