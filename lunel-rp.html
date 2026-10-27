@@ -1,93 +1,33 @@
 <!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Lunel RP — Serveur Roblox ER:LC</title>
-  <meta name="description" content="Découvrez Lunel RP, serveur français RolePlay sur Emergency Response: Liberty County, et retrouvez le code serveur ER:LC ainsi que le Discord officiel.">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header class="site-header">
-  <nav class="nav">
-    <a class="brand" href="index.html"><img class="brand-logo" src="assets/ozirp-logo-icon.png" alt="Logo OziRP"><span>OziRP</span></a>
-    <div class="navlinks"><a href="index.html">Accueil</a><a href="commandes.html">Commandes</a><a href="lunel-rp.html">Lunel RP</a><a href="politique-confidentialite.html">Confidentialité</a><a href="cgu.html">CGU</a></div>
-  </nav>
-</header>
-<main class="lunel-wrap">
-  <section class="lunel-hero">
-    <div class="lunel-hero-content">
-      <span class="badge">Roblox • ER:LC • RolePlay français</span>
-      <h1>Bienvenue sur<br>Lunel RP.</h1>
-      <p class="lead">Lunel RP est un serveur français sur <strong>Emergency Response: Liberty County</strong>, pensé pour proposer un roleplay organisé, immersif et accessible. OziRP accompagne le serveur avec de nombreux systèmes pour enrichir la vie de vos personnages.</p>
-      <div class="actions">
-        <a class="btn primary" href="https://discord.gg/ZyDnUXGUGc" target="_blank" rel="noopener noreferrer">💬 Rejoindre le Discord</a>
-        <a class="btn secondary" href="#rejoindre">🎮 Comment rejoindre</a>
-      </div>
-    </div>
-    <aside class="lunel-code-card">
-      <span class="server-label">CODE DU SERVEUR ER:LC</span>
-      <strong class="server-code">LUNEL</strong>
-      <p>Dans ER:LC, ouvrez la recherche des serveurs privés et saisissez simplement ce code.</p>
-      <button class="btn secondary copy-code" type="button" data-code="LUNEL">📋 Copier le code</button>
-      <span class="copy-feedback" aria-live="polite"></span>
-    </aside>
-  </section>
-
-  <section class="lunel-grid">
-    <article class="info-card">
-      <span class="card-icon">🌆</span>
-      <h2>Un univers RP complet</h2>
-      <p>Créez votre personnage, développez sa vie professionnelle et participez à une économie et à des services pensés pour renforcer l’immersion.</p>
-    </article>
-    <article class="info-card">
-      <span class="card-icon">🚓</span>
-      <h2>De nombreux métiers</h2>
-      <p>Services de secours, forces de l’ordre, santé, transport, banque, métiers civils et autres activités permettent de varier les expériences RP.</p>
-    </article>
-    <article class="info-card">
-      <span class="card-icon">🤖</span>
-      <h2>Propulsé par OziRP</h2>
-      <p>Documents RP, banque, permis, véhicules, services, salaires et autres outils sont intégrés grâce au bot OziRP.</p>
-    </article>
-  </section>
-
-  <section id="rejoindre" class="join-panel">
-    <div>
-      <span class="badge">Nous rejoindre</span>
-      <h2>Comment accéder à Lunel RP ?</h2>
-      <ol>
-        <li>Lancez <strong>Emergency Response: Liberty County</strong> sur Roblox.</li>
-        <li>Accédez aux <strong>serveurs privés</strong>.</li>
-        <li>Entrez le code serveur <strong>LUNEL</strong>.</li>
-        <li>Rejoignez également notre Discord pour accéder à la communauté, aux informations et à l’organisation du serveur.</li>
-      </ol>
-    </div>
-    <div class="join-cta">
-      <div class="mini-code"><span>Code ER:LC</span><strong>LUNEL</strong></div>
-      <a class="btn primary" href="https://discord.gg/ZyDnUXGUGc" target="_blank" rel="noopener noreferrer">Rejoindre le Discord</a>
-    </div>
-  </section>
-</main>
-<footer class="footer">
-  <strong>OziRP</strong> — Bot Discord destiné au roleplay<br>
-  <a href="commandes.html">Commandes</a> • <a href="lunel-rp.html">Lunel RP</a> • <a href="politique-confidentialite.html">Confidentialité</a> • <a href="cgu.html">CGU</a><br>
-  Contact : <a href="mailto:ozi.rp26@gmail.com">ozi.rp26@gmail.com</a>
-</footer>
-<script>
-document.querySelectorAll('.copy-code').forEach(function(button){
-  button.addEventListener('click', async function(){
-    const code=button.dataset.code || 'LUNEL';
-    const feedback=button.parentElement.querySelector('.copy-feedback');
-    try {
-      await navigator.clipboard.writeText(code);
-      feedback.textContent='Code copié !';
-    } catch (e) {
-      feedback.textContent='Code : '+code;
-    }
-    setTimeout(function(){ feedback.textContent=''; }, 2200);
-  });
-});
-</script>
-</body>
-</html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lunel RP — Serveur Roblox ER:LC — OziRP</title><meta name="description" content="Découvrez Lunel RP, son univers RolePlay français sur Roblox ER:LC et le code privé LUNEL.">
+<meta name="theme-color" content="#091425"><link rel="icon" type="image/png" href="assets/ozirp-logo-icon.png"><link rel="stylesheet" href="styles.css"></head>
+<body class="page-lunel"><a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header" id="haut">
+  <div class="nav-shell container">
+    <a class="brand" href="index.html" aria-label="OziRP — Accueil">
+      <span class="brand-symbol"><img src="assets/ozirp-logo-icon.png" alt="" onerror="this.style.display='none';this.parentNode.textContent='O'" /></span>
+      <span class="brand-text">Ozi<span>RP</span><small>DISCORD ROLEPLAY</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    <nav class="navlinks" id="nav-links" aria-label="Navigation principale">
+      <a href="index.html" data-page="index">Accueil</a>
+      <a href="commandes.html" data-page="commandes">Commandes</a>
+      <a href="lunel-rp.html" data-page="lunel">Lunel RP</a>
+      <a class="nav-legal" href="politique-confidentialite.html">Confidentialité</a>
+      <a class="nav-legal" href="cgu.html">CGU</a>
+      <a class="nav-cta" href="https://discord.gg/ZyDnUXGUGc" target="_blank" rel="noopener noreferrer">Rejoindre le Discord <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header><main id="contenu"><section class="page-intro container lunel-intro"><div class="eyebrow">ROBLOX · ER:LC · ROLEPLAY FRANÇAIS</div><h1>Bienvenue à <span>Lunel RP.</span></h1><p>Une ville à faire vivre, des métiers à découvrir et des histoires à construire. Rejoignez un univers RP organisé sur Emergency Response: Liberty County.</p><div class="hero-actions"><a class="btn btn-primary" href="https://discord.gg/ZyDnUXGUGc" target="_blank" rel="noopener noreferrer">Rejoindre la communauté ↗</a><a class="btn btn-outline" href="#comment-rejoindre">Comment nous rejoindre ↓</a></div></section>
+<section class="container lunel-feature"><div class="lunel-poster"><span class="lunel-poster-kicker">LUNEL <b>RP</b></span><div class="lunel-poster-line">VIVEZ<br><em>VOTRE</em><br>HISTOIRE.</div><div class="lunel-poster-bottom">🚔 &nbsp; 🚒 &nbsp; 🏥 &nbsp; 🏡 &nbsp; 💳</div></div><div class="server-card"><span class="kicker">ACCÈS AU SERVEUR</span><h2>Votre ville vous attend.</h2><p>Ouvrez les serveurs privés depuis le jeu Roblox ER:LC et saisissez le code suivant.</p><div class="server-code-box"><span>CODE ER:LC</span><strong>LUNEL</strong><button type="button" class="copy-code" data-code="LUNEL" aria-label="Copier le code LUNEL">Copier ⧉</button></div><p class="copy-feedback" aria-live="polite"></p><div class="server-divider"></div><p>Rejoignez également le serveur Discord pour le règlement, les informations, les recrutements et vos démarches RP.</p><a class="btn btn-primary" href="https://discord.gg/ZyDnUXGUGc" target="_blank" rel="noopener noreferrer">Ouvrir le Discord ↗</a></div></section>
+<section class="section container"><div class="section-top"><div><span class="kicker">VOTRE UNIVERS</span><h2>À chacun son <em>rôle.</em></h2><p>Parcourez les nombreux services et activités de Lunel RP.</p></div></div><div class="career-grid"><div class="career-item"><span>🚔</span><h3>Forces de l'ordre</h3><p>Gendarmerie, Police Municipale et procédures RP.</p></div><div class="career-item"><span>🚒</span><h3>Secours & santé</h3><p>Sapeurs-pompiers, CHU, SMUR et interventions.</p></div><div class="career-item"><span>🏦</span><h3>Banque & justice</h3><p>Économie RP, transactions et tribunal judiciaire.</p></div><div class="career-item"><span>🏡</span><h3>Vie civile</h3><p>Immobilier, restaurants, cinéma, transport et métiers.</p></div></div></section>
+<section class="section container join-section" id="comment-rejoindre"><div class="section-top"><div><span class="kicker">LES PREMIERS PAS</span><h2>Comment nous <em>rejoindre ?</em></h2></div></div><ol class="join-steps"><li><span>01</span><div><h3>Ouvrez Roblox</h3><p>Lancez <strong>Emergency Response: Liberty County</strong>.</p></div></li><li><span>02</span><div><h3>Choisissez un serveur privé</h3><p>Recherchez le code <strong>LUNEL</strong> dans ER:LC.</p></div></li><li><span>03</span><div><h3>Rejoignez le Discord</h3><p>Consultez le règlement et suivez le parcours d'accueil du serveur.</p></div></li><li><span>04</span><div><h3>Créez votre personnage RP</h3><p>Utilisez les outils OziRP pour relier Roblox et préparer vos documents fictifs.</p></div></li></ol></section></main><footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand"><strong>Ozi<span>RP</span></strong><p>Votre univers roleplay, organisé avec Discord et Roblox.</p><p class="rp-disclaimer">OziRP est un outil indépendant de roleplay. Tous les documents et montants RP sont fictifs.</p></div>
+    <div><span class="footer-heading">Explorer</span><a href="index.html">Accueil</a><a href="commandes.html">Catalogue des commandes</a><a href="lunel-rp.html">Lunel RP</a></div>
+    <div><span class="footer-heading">Informations</span><a href="politique-confidentialite.html">Confidentialité</a><a href="cgu.html">Conditions d'utilisation</a><a href="mailto:ozi.rp26@gmail.com">Contact</a></div>
+    <div><span class="footer-heading">Communauté</span><a href="https://discord.gg/ZyDnUXGUGc" target="_blank" rel="noopener noreferrer">Discord Lunel RP ↗</a><span class="footer-muted">ER:LC — Code : LUNEL</span></div>
+  </div>
+  <div class="footer-bottom container"><span>© 2026 OziRP — Site de présentation</span><span>Conçu pour le roleplay, pas pour un usage officiel</span></div>
+</footer><script defer src="script.js"></script></body></html>
