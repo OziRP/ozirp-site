@@ -1,7 +1,70 @@
 <!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Le bot Discord pour Lunel RP — OziRP</title><meta name="description" content="OziRP rassemble les personnages RP, documents, banque, métiers, immobilier et événements Discord pour Lunel RP.">
-<meta name="theme-color" content="#091425"><link rel="icon" type="image/png" href="assets/ozirp-logo-icon.png"><link rel="stylesheet" href="styles.css"></head>
+<meta name="theme-color" content="#091425"><link rel="icon" type="image/png" href="assets/ozirp-logo-icon.png"><link rel="stylesheet" href="styles.css?v=ozirp-social-20261027-v2"><style id="community-social-style">
+/* OziRP 2026 — TikTok & Ko-fi : espaces de communauté */
+.community-section{padding-top:90px;padding-bottom:92px;scroll-margin-top:92px}
+.community-heading{display:flex;justify-content:space-between;align-items:end;gap:42px;margin-bottom:34px}
+.community-heading>div{max-width:710px}
+.community-heading h2{max-width:740px;margin:14px 0 0;font-size:clamp(2.3rem,4.1vw,4.05rem)}
+.community-heading h2 em{font-style:normal;color:#81caff}
+.community-heading>p{flex:0 1 365px;color:#a4b6cf;font-size:14px;line-height:1.85;padding-bottom:6px}
+.community-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.community-card{isolation:isolate;position:relative;display:flex;flex-direction:column;overflow:hidden;min-height:444px;padding:34px 34px 29px;border-radius:26px;border:1px solid rgba(194,223,255,.20);box-shadow:0 25px 55px rgba(1,7,19,.25);transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease}
+.community-card:hover{transform:translateY(-5px);border-color:rgba(194,223,255,.39);box-shadow:0 34px 68px rgba(1,7,19,.36)}
+.community-tiktok{background:radial-gradient(ellipse at 95% 0%,rgba(255,68,121,.24),transparent 50%),radial-gradient(ellipse at 2% 100%,rgba(26,227,225,.15),transparent 53%),linear-gradient(133deg,#131829,#0c1628 64%,#0c1120)}
+.community-kofi{background:radial-gradient(ellipse at 95% 4%,rgba(74,177,255,.29),transparent 50%),radial-gradient(ellipse at 0% 100%,rgba(109,106,246,.18),transparent 55%),linear-gradient(133deg,#102c48,#0c1f35 57%,#101930)}
+.community-card-orbit{position:absolute;z-index:-1;right:-85px;top:-80px;width:310px;height:310px;border:1px solid rgba(230,240,255,.11);border-radius:50%;box-shadow:0 0 0 50px rgba(235,242,255,.027),0 0 0 105px rgba(235,242,255,.018)}
+.community-card-head{display:flex;align-items:center;gap:15px;margin-bottom:36px}
+.social-mark{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:12px;flex-shrink:0}
+.social-mark svg{display:block;width:24px !important;height:24px !important;max-width:24px !important;max-height:24px !important;min-width:24px;min-height:24px;flex:0 0 24px}
+.social-mark-tiktok{background:rgba(5,11,24,.66);border:1px solid rgba(255,255,255,.13);box-shadow:0 10px 24px rgba(0,0,0,.17)}
+.social-mark-kofi{background:#158ddd;box-shadow:0 9px 24px rgba(26,132,241,.28)}
+.community-platform{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font:800 11px 'DM Sans',sans-serif;letter-spacing:.14em;color:#ebf6ff}
+.community-live-dot{width:6px;height:6px;background:#53d9d9;border-radius:50%;box-shadow:0 0 0 4px rgba(83,217,217,.10)}
+.community-small-note{font-size:9px;letter-spacing:.08em;font-weight:800;color:#c5e6ff;background:rgba(255,255,255,.08);border-radius:6px;padding:4px 7px}
+.community-card-body{position:relative;flex:1}
+.community-overline{font-size:10px;letter-spacing:.13em;font-weight:800;color:#8eafcb}
+.community-card h3{margin:13px 0 14px;font-size:clamp(1.7rem,2.65vw,2.45rem);line-height:1.12;max-width:490px}
+.community-card h3 span{color:#81daea}
+.community-kofi h3 span{color:#8ecbff}
+.community-card-body>p{max-width:485px;font-size:13.8px;line-height:1.83;color:#b9c9dd;margin-bottom:27px}
+.community-action{position:relative;display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:59px;border:1px solid rgba(255,255,255,.15);border-radius:15px;padding:11px 12px 11px 19px;font-size:14px;font-weight:800;color:#fff;transition:background .22s,transform .22s}
+.community-action:hover{transform:translateY(-2px)}
+.action-tiktok{background:linear-gradient(115deg,rgba(30,68,86,.94),rgba(82,34,68,.68))}
+.action-tiktok:hover{background:linear-gradient(115deg,rgba(36,101,121,.98),rgba(120,43,80,.79))}
+.action-kofi{background:linear-gradient(115deg,#1389db,#1469bb)}
+.action-kofi:hover{background:linear-gradient(115deg,#1b9aec,#1472c7)}
+.community-arrow{display:grid;place-items:center;width:37px;height:37px;background:rgba(255,255,255,.13);border-radius:10px;font-size:21px}
+.community-fineprint{font-size:10.8px;color:#a6c9ea;line-height:1.7;padding-top:12px}
+.page-lunel .community-section{padding-top:65px}
+@media(max-width:850px){.community-heading{align-items:start;flex-direction:column;gap:13px}.community-heading>p{flex:auto;max-width:660px}.community-cards{gap:13px}.community-card{padding:27px 24px;min-height:445px}.community-card-head{margin-bottom:29px}}
+@media(max-width:660px){.community-cards{grid-template-columns:1fr}.community-card{min-height:0;padding:27px 25px 25px}.community-heading{margin-bottom:25px}.community-heading h2{font-size:clamp(2rem,9.3vw,3rem)}.community-card h3{font-size:clamp(1.7rem,7.3vw,2.2rem)}.community-card-head{margin-bottom:28px}.community-action{margin-top:10px}.community-section{padding-top:58px;padding-bottom:65px}}
+/* Affichage sans défilement horizontal sur les petits écrans. */
+@media(max-width:530px){
+  .integration-inner{grid-template-columns:minmax(0,1fr)}
+  .integration-copy,.connection-graphic{min-width:0;max-width:100%}
+  .connection-graphic{width:100%;gap:4px}
+  .connection-node{flex:0 1 90px;width:90px}
+  .connection-dash{min-width:0;flex:1}
+  .hero-visual .visual-glow{inset:0}
+}
+
+/* Neutralisation de la taille par defaut des SVG (CSS ancien / cache) */
+section.community-section .community-card .community-card-head .social-mark {
+ display:inline-flex!important; align-items:center!important;justify-content:center!important;
+ flex:0 0 42px!important; width:42px!important;height:42px!important;
+ min-width:42px!important; max-width:42px!important;min-height:42px!important; max-height:42px!important;
+ overflow:hidden!important;
+}
+section.community-section .community-card .community-card-head .social-mark svg {
+ display:block!important; position:static!important; width:24px!important; height:24px!important;
+ max-width:24px!important; max-height:24px!important; min-width:24px!important; min-height:24px!important;
+ aspect-ratio:1!important; transform:none!important;
+}
+
+</style>
+</head>
 <body class="page-home"><a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header" id="haut">
   <div class="nav-shell container">
@@ -57,7 +120,7 @@
   <div class="community-cards">
     <article class="community-card community-tiktok">
       <div class="community-card-orbit" aria-hidden="true"></div>
-      <div class="community-card-head"><span class="social-mark social-mark-tiktok" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M23 6v18.3a7.8 7.8 0 1 1-7.7-7.8" stroke="#36e5df" stroke-width="5" stroke-linecap="round"/><path d="M23 6c1.4 6.5 5.2 9.3 11 9.8" stroke="#ff4c87" stroke-width="5" stroke-linecap="round"/><path d="M21 6v18.3a7.8 7.8 0 1 1-7.7-7.8M21 6c1.4 6.5 5.2 9.3 11 9.8" stroke="white" stroke-width="4" stroke-linecap="round"/></svg></span><span class="community-platform">TIKTOK <span class="community-live-dot"></span> @lunel_rp</span></div>
+      <div class="community-card-head"><span class="social-mark social-mark-tiktok" aria-hidden="true"><svg width="24" height="24" style="width:24px!important;height:24px!important;max-width:24px!important;max-height:24px!important;display:block!important" viewBox="0 0 40 40" fill="none"><path d="M23 6v18.3a7.8 7.8 0 1 1-7.7-7.8" stroke="#36e5df" stroke-width="5" stroke-linecap="round"/><path d="M23 6c1.4 6.5 5.2 9.3 11 9.8" stroke="#ff4c87" stroke-width="5" stroke-linecap="round"/><path d="M21 6v18.3a7.8 7.8 0 1 1-7.7-7.8M21 6c1.4 6.5 5.2 9.3 11 9.8" stroke="white" stroke-width="4" stroke-linecap="round"/></svg></span><span class="community-platform">TIKTOK <span class="community-live-dot"></span> @lunel_rp</span></div>
       <div class="community-card-body">
         <span class="community-overline">DÉCOUVREZ • PARTAGEZ • VIBREZ</span>
         <h3>Les plus belles histoires méritent d'être <span>partagées.</span></h3>
@@ -67,7 +130,7 @@
     </article>
     <article class="community-card community-kofi">
       <div class="community-card-orbit" aria-hidden="true"></div>
-      <div class="community-card-head"><span class="social-mark social-mark-kofi" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><rect x="6" y="12" width="24" height="18" rx="5" fill="#fff"/><path d="M30 16h2a5 5 0 0 1 0 10h-2" stroke="#fff" stroke-width="4"/><path d="M18 17c-2-3-7-1.1-5 2.6 1 2 5 5.1 5 5.1s4-3.1 5-5.1C25 15.9 20 14 18 17Z" fill="#ff6684"/></svg></span><span class="community-platform">KO-FI <span class="community-small-note">SOUTIEN LIBRE</span></span></div>
+      <div class="community-card-head"><span class="social-mark social-mark-kofi" aria-hidden="true"><svg width="24" height="24" style="width:24px!important;height:24px!important;max-width:24px!important;max-height:24px!important;display:block!important" viewBox="0 0 40 40" fill="none"><rect x="6" y="12" width="24" height="18" rx="5" fill="#fff"/><path d="M30 16h2a5 5 0 0 1 0 10h-2" stroke="#fff" stroke-width="4"/><path d="M18 17c-2-3-7-1.1-5 2.6 1 2 5 5.1 5 5.1s4-3.1 5-5.1C25 15.9 20 14 18 17Z" fill="#ff6684"/></svg></span><span class="community-platform">KO-FI <span class="community-small-note">SOUTIEN LIBRE</span></span></div>
       <div class="community-card-body">
         <span class="community-overline">UN PETIT GESTE, UNE BELLE AVENTURE</span>
         <h3>Ensemble, faisons grandir <span>Lunel RP.</span></h3>
